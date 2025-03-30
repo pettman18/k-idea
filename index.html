@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workday HR Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <ul class="field-list">
+      <li><input type="checkbox" id="check-employee-id" disabled> Employee ID</li>
+      <li><input type="checkbox" id="check-full-name" disabled> Full Name</li>
+      <li><input type="checkbox" id="check-job-title" disabled> Job Title</li>
+      <li><input type="checkbox" id="check-department" disabled> Department</li>
+      <li><input type="checkbox" id="check-start-date" disabled> Start Date</li>
+    </ul>
+  </div>
+  
+  <div class="form-container">
+    <div class="scroll-container">
+      <input class="wd-input" type="text" placeholder="Employee ID" data-field="employee-id" />
+      <input class="wd-input" type="text" placeholder="Full Name" data-field="full-name" />
+      <input class="wd-input" type="text" placeholder="Job Title" data-field="job-title" />
+      <input class="wd-input" type="text" placeholder="Department" data-field="department" />
+      <input class="wd-input" type="text" placeholder="Start Date" data-field="start-date" />
+    </div>
+    <div class="overlay" id="logo-overlay">
+        <img src="kainos.png" alt="Kainos Logo" class="logo" />
+    </div>
+    <button id="start-button" class="start-button">Kainos Ai Process</button>
+  </div>
+  
+  <div class="info-sidebar">
+    <h3>Field Information</h3>
+    <div id="info-content">
+      <p>Select a field to see relevant information.</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
